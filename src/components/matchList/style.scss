@@ -1,0 +1,58 @@
+.match-list {
+    table {
+        text-align: center;
+
+        &>:not(caption)>*>* {
+            padding: .1rem !important;
+        }
+
+        thead {
+            tr {
+                padding: .1rem !important;
+
+                th {
+                    font-size: .16rem;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                padding: .1rem;
+
+                td {
+                    font-size: .12rem;
+
+                    &.rate {
+                        padding: 0 !important;
+
+                        span {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            padding: .1rem !important;
+
+                            &.selected {
+                                background-color: yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .match-list {
+        table {
+            thead {
+                tr {
+                    th {
+                        font-size: .14rem;
+                    }
+                }
+            }
+        }
+    }
+}
